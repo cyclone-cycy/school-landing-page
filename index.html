@@ -514,6 +514,159 @@
             transform: translateY(-8px);
             box-shadow: 0 15px 40px rgba(255, 158, 0, 0.2);
         }
+
+        /* Agent Partner Program Section */
+        .partner-program-section {
+            background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 50%, #f0fdfa 100%);
+            padding: 80px 0;
+            position: relative;
+            border-top: 1px solid #d1fae5;
+            border-bottom: 1px solid #d1fae5;
+        }
+
+        .partner-program-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2310b981' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            z-index: 0;
+        }
+
+        .partner-program-section .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .partner-program-section .section-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #10b981;
+            color: #fff;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+        }
+
+        .partner-program-section h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 15px;
+        }
+
+        .partner-program-section .section-subtitle {
+            font-size: 18px;
+            color: #64748b;
+            margin-bottom: 50px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .partner-step-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 35px 25px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .partner-step-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #10b981, #059669);
+        }
+
+        .partner-step-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(16, 185, 129, 0.15);
+        }
+
+        .partner-step-number {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #fff;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .partner-step-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 12px;
+        }
+
+        .partner-step-card p {
+            font-size: 15px;
+            color: #64748b;
+            line-height: 1.7;
+        }
+
+        .partner-cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #fff;
+            padding: 16px 40px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 16px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+            margin-top: 40px;
+        }
+
+        .partner-cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+            color: #fff;
+        }
+
+        .partner-cta-btn svg {
+            transition: transform 0.3s ease;
+        }
+
+        .partner-cta-btn:hover svg {
+            transform: translateX(4px);
+        }
+
+        @media (max-width: 767px) {
+            .partner-program-section h2 {
+                font-size: 28px;
+            }
+
+            .partner-program-section .section-subtitle {
+                font-size: 16px;
+            }
+
+            .partner-step-card {
+                margin-bottom: 20px;
+            }
+        }
     </style>
 </head>
 
@@ -580,6 +733,8 @@
                                             </li>
                                             <li> <a href="https://dash.bmp.com.ng/login">Login</a></li>
                                             <li> <a href="https://dash.bmp.com.ng/register">Register</a></li>
+                                            <li> <a href="https://dash.bmp.com.ng/agent/register">Become an Agent</a>
+                                            </li>
                                         </ul>
                                     </li>
 
@@ -600,7 +755,7 @@
                                 <li> <a href="#">Docs</a></li>
                             </ul>
                             <div class="cbt-feature-highlight">
-                                <a href="https://bmp.com.ng/cta" target="_blank" class="cbt-link">
+                                <a href="https://dash.bmp.com.ng/" target="_blank" class="cbt-link">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" class="cbt-icon">
@@ -714,12 +869,12 @@
                                 </div>
                                 <div class="react-content">
                                     <h3 class="react-title">
-                                        <a href="https://dash.bmp.com.ng/cta" target="_blank">Computer Based Testing
+                                        <a href="https://dash.bmp.com.ng/" target="_blank">Computer Based Testing
                                             (CBT)</a>
                                     </h3>
                                     <p>Conduct secure online exams with automated grading and instant results. Create
                                         question banks, set time limits, and eliminate manual marking forever.</p>
-                                    <a href="https://dash.bmp.com.ng/cta" target="_blank"> Try Demo <svg
+                                    <a href="https://dash.bmp.com.ng/" target="_blank"> Try Demo <svg
                                             xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round"
@@ -851,6 +1006,68 @@
                 </div>
             </div>
             <!--================= About Section End Here ================= -->
+
+            <!--=================  Partner Program Section Start Here ================= -->
+            <div class="partner-program-section">
+                <div class="container">
+                    <div class="text-center">
+                        <span class="section-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            PARTNER PROGRAM
+                        </span>
+                        <h2>Earn Money Referring Schools</h2>
+                        <p class="section-subtitle">Join our Agent Partner Program, generate unique referral links, and
+                            earn commissions on every school that signs up and pays through your link.</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="partner-step-card">
+                                <div class="partner-step-number">1</div>
+                                <h3>Register as Agent</h3>
+                                <p>Create your free agent account in minutes. Provide your details and get approved by
+                                    our team to start referring schools.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="partner-step-card">
+                                <div class="partner-step-number">2</div>
+                                <h3>Share Referral Links</h3>
+                                <p>Generate unique referral codes and links from your dashboard. Share them with school
+                                    owners and decision makers in your network.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="partner-step-card">
+                                <div class="partner-step-number">3</div>
+                                <h3>Earn Commissions</h3>
+                                <p>Track every referral from registration to payment. Earn commission on each
+                                    conversion and request payouts directly from your agent dashboard.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <a href="https://dash.bmp.com.ng/agent/register" target="_blank" class="partner-cta-btn">
+                            Become a Partner Agent
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--=================  Partner Program Section End Here ================= -->
 
             <!--=================  GitHub Star CTA Section Start Here ================= -->
             <div class="github-star-cta">
@@ -1603,6 +1820,8 @@
                                         <li><a href="#">Blog</a></li>
                                         <li><a href="#">FAQ</a></li>
                                         <li><a href="#">Contact</a></li>
+                                        <li><a href="https://dash.bmp.com.ng/agent/register" target="_blank">Partner
+                                                Program</a></li>
                                     </ul>
                                 </div>
                             </div>
